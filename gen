@@ -1,0 +1,12 @@
+#!/bin/bash
+
+prefix="prob"
+sufix=".c"
+goal="${prefix}${1}${sufix}"
+
+gcc -Wall -Wextra "$goal" util.c hash.c -lm -O2 -g
+
+
+#if [ $? -eq 0 ]; then
+#    make run
+#fi
